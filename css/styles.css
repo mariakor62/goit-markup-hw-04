@@ -109,29 +109,17 @@ img {
   height: 12px;
   margin-right: 10px;
 }
+.envelope {
+  fill: #2196f3;
+}
+.envelope-portfolio {
+  fill: #757575;
 
-/* .contact::before { */
-  content: "";
-  display: inline-block;
-  height: 16px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-right: 10px;
-  align-self: center;
-/* } */
-/* .icon-envelope::before { */
-  width: 16px;
-  height: 12px;
-  background-image: url(../images/envelope.svg);
-  /* } */
-/* .icon-delivery::before { */
+}
+.smartphone {
   width: 10px;
   height: 16px;
-  background-image: url(../images/smartphone.svg);
-  outline: 1px solid red;
-/* } */
-
+}
 .header-mail {
   font-weight: 500;
   font-size: 14px;
@@ -146,8 +134,6 @@ img {
   letter-spacing: 0.02em;
   color: #757575;
 }
-
-
 .header-list .link.current {
   color:  #2196f3;
 }
