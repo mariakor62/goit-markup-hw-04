@@ -103,16 +103,28 @@ img {
 .header-right .header-mail.current {
   color: #2196f3;
 }
-.header-right::before {
+.contact::before {
   content: "";
+  display: inline-block;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+  align-self: center;
+}
+.icon-envelope::before {
   width: 16px;
   height: 12px;
   background-image: url(../images/envelope.svg);
-  background-size: contain;
-  
-  align-self: center ;
-  margin-right: 10px;
+  }
+.icon-delivery::before {
+  width: 10px;
+  height: 16px;
+  background-image: url(../images/smartphone.svg);
+  outline: 1px solid red;
 }
+
 .header-mail {
   font-weight: 500;
   font-size: 14px;
@@ -127,15 +139,10 @@ img {
   letter-spacing: 0.02em;
   color: #757575;
 }
-.header-tel::before {
-  content: "";
-  width: 10px;
-  height: 16px;
-  background-image: url(../images/);
-  ba
-}
+
+
 .header-list .link.current {
-  color: #2196f3;
+  color:  #2196f3;
 }
 .header-list .link:hover,
 .header-list .link:focus {
@@ -301,6 +308,31 @@ padding-bottom: 200px;
   letter-spacing: 0.03em;
   
   color: #757575;
+}
+.features-item::before {
+  content: "";
+  width: 270px;
+  height: 120px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  margin-bottom: 30px;
+  background-color: #F5F4FA;
+
+  
+}
+.features-item::before {
+  background-image: url(../images/Group.svg), url(../images/Rectangle.svg);
+}
+.icon-clock::before { 
+  background-image: url(../images/clock.svg), url(../images/Rectangle.svg);
+}
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
 }
 /* Галерея - Чем мы занимаемся */
 
@@ -486,9 +518,6 @@ padding-bottom: 200px;
   border: none;
 }
 
-.cards {
-  padding-bottom: 94px;
-}
 .projects-list {
   display: flex;
   flex-wrap: wrap;
