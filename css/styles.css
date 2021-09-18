@@ -103,7 +103,14 @@ img {
 .header-right .header-mail.current {
   color: #2196f3;
 }
-.contact::before {
+
+.contact-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+/* .contact::before { */
   content: "";
   display: inline-block;
   height: 16px;
@@ -112,18 +119,18 @@ img {
   background-position: center;
   margin-right: 10px;
   align-self: center;
-}
-.icon-envelope::before {
+/* } */
+/* .icon-envelope::before { */
   width: 16px;
   height: 12px;
   background-image: url(../images/envelope.svg);
-  }
-.icon-delivery::before {
+  /* } */
+/* .icon-delivery::before { */
   width: 10px;
   height: 16px;
   background-image: url(../images/smartphone.svg);
   outline: 1px solid red;
-}
+/* } */
 
 .header-mail {
   font-weight: 500;
@@ -309,7 +316,7 @@ padding-bottom: 200px;
   
   color: #757575;
 }
-.features-item::before {
+/* .features-item::before { */
   content: "";
   width: 270px;
   height: 120px;
@@ -319,21 +326,20 @@ padding-bottom: 200px;
   background-position-y: 50%;
   margin-bottom: 30px;
   background-color: #F5F4FA;
+/* } */
 
-  
-}
-.features-item::before {
+/* .features-item::before { */
   background-image: url(../images/Group.svg), url(../images/Rectangle.svg);
-}
-.icon-clock::before { 
+/* } */
+/* .icon-clock::before {  */
   background-image: url(../images/clock.svg), url(../images/Rectangle.svg);
-}
-.icon-diagram::before {
+/* } */
+/* .icon-diagram::before { */
   background-image: url(../images/diagram.svg);
-}
-.icon-astronaut::before {
+/* } */
+/* .icon-astronaut::before { */
   background-image: url(../images/astronaut.svg);
-}
+/* } */
 /* Галерея - Чем мы занимаемся */
 
 .cards-title {
