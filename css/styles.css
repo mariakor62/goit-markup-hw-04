@@ -102,6 +102,7 @@ img {
 }
 .header-right .header-mail.current {
   color: #2196f3;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .contact-icon {
@@ -111,6 +112,7 @@ img {
 }
 .envelope {
   fill: #2196f3;
+  text-shadow: 3px, 4px, 4px rgba(0, 0, 0, 0.25);
 }
 .envelope-portfolio {
   fill: #757575;
@@ -119,7 +121,9 @@ img {
 .smartphone {
   width: 10px;
   height: 16px;
+  outline: 1px solid red;
 }
+
 .header-mail {
   font-weight: 500;
   font-size: 14px;
@@ -127,6 +131,14 @@ img {
   letter-spacing: 0.02em;
   color: #757575;
 }
+.header-mail {
+  text-shadow: 3px, 4px, 4px rgba(0, 0, 0, 0.25);
+  fill: solid #2196F3;
+  stroke: solid #000000;
+
+}
+  
+  
 .header-tel {
   font-weight: 500;
   font-size: 14px;
@@ -199,7 +211,9 @@ padding-bottom: 200px;
   margin-right: auto;
 
 
-  background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4),rgba(196,196,196,1));
+  /* background-image: url(../images/Bghero.jpg); */
+  /* background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4),rgba(196,196,196,1)); */
+  background-image: linear-gradient( to right,#000000 20%,#2F303A 40%);
   background-image: url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
