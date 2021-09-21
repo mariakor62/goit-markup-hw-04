@@ -95,6 +95,8 @@ img {
 }
 .header-right {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: auto;
 }
 .header-right .contact + .contact {
@@ -104,19 +106,29 @@ img {
   color: #2196f3;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
+.contact {
+  display: flex;
+  justify-content: center;
+} 
+.contact-link {
+  display: flex;
+  justify-content: center;
+  /* width: 16px; */
+  height: 12px;
+  margin-right: 10px;
+}
 .contact-icon {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.24);
 }
 .envelope {
   fill: #2196f3;
-  text-shadow: 3px, 4px, 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 3px, 4px, 4px rgba(0, 0, 0, 0.25);
 }
 .envelope-portfolio {
   fill: #757575;
-
 }
 .smartphone {
   width: 10px;
@@ -136,8 +148,6 @@ img {
   stroke: solid #000000;
 
 }
-  
-  
 .header-tel {
   font-weight: 500;
   font-size: 14px;
@@ -458,16 +468,31 @@ padding-bottom: 200px;
 
 /* Footer Contacts */
 .footer {
-  padding: 60px 0 60px;
+  display: flex;
+  align-items: center;
+  /* padding: 60px 0 60px; */
   background-color: #2f303a;
 }
-.contacts-address {
-  margin-top: 20px;
+.contact-items {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
 }
-.text-item {
+.logo-footer {
+  margin-bottom: 20px;
+}
+.footer-contacts {
+  display: flex;
+}
+.list-icons {
+  display: flex;
+  justify-content: center;
+}
+.contacts-address {
   margin-bottom: 9px;
 }
-.footer-list .footer-item {
+.footer-item {
   margin-bottom: 9px;
 }
 .contacts-address {
@@ -477,9 +502,30 @@ padding-bottom: 200px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
-  padding-bottom: 9px;
 }
-
+.footer-right {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-left: 70px;
+  width: 206px;
+  height: 80px;
+}
+.footer-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid white;
+}
+.footer-link .instagram {
+  fill: #ffffff;
+}
+.footer-icons:not(:last-child) {
+  margin-right: 10px;
+  
+}
 .contacts-mail {
   font-weight: 400;
   font-size: 14px;
@@ -501,6 +547,27 @@ padding-bottom: 200px;
 .contacts-mail:hover,
 .contacts-mail:focus {
   color: #2196f3;
+}
+.phone-item {
+  margin-bottom: 60px;
+}
+.text-title {
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  vertical-align: top;
+  letter-spacing: 3%;
+  color: #FFFFFF;
+  margin-top: 72px;
+  margin-bottom: 20px;
+}
+
+.twitter-current {
+  margin: 0;
+  background-color:#2196f3;
+  fill: #ffffff;
 }
 
 <!--Portfolio-->
@@ -598,46 +665,22 @@ padding-bottom: 200px;
 }
 /* Постоянные клиенты- */
 .customers-title {
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 36px;
-line-height: 42px;
-text-align: center;
-letter-spacing: 0.03em;
-
-color: #212121;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
 }
 .customer-link {
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-
-.customer-icon {
-  display: flex;
   justify-content: center;
-  align-items: center;
-  outline: 1px solid green;
-}
-.box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: auto;
   width: 106px;
-  height: 52px;
-  outline: 1px solid black;
-}
-.customer-icon {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  
-  outline: 1px solid tomato;
-}
-.customer-logo {
-  outline: 1px solid red;
+  height: 60px;
 }
 .customer-logo:not(:last-child) {
   margin-right: 30px;
@@ -647,14 +690,19 @@ color: #212121;
   display: flex;
   justify-content: center;
   align-items: center;
-  
-}
+} 
 .logo-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
-  height: 79px;
-  border: 1px solid #757575;
+  height: 80px;
+  border: 1px solid #AFB1B8;
+  box-shadow: 0px, 4px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
 }
-
-/* .customer-link:not(:last-child) { */
-  /* margin-right: 30px; */
-/* } */
+  
+  /* stroke: solid; */
+  /* align: inside; */
+  /* drop-shadow: 0px, 4px rgba(0, 0, 0, 0.25); */
+  
