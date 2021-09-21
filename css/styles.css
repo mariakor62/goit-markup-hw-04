@@ -52,6 +52,11 @@ img {
   max-width: 100%;
   height: auto;
 }
+.hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
