@@ -111,43 +111,30 @@ img {
   display: flex;
   justify-content: center;
 } 
+
 .contact-link {
   display: flex;
   justify-content: center;
-  height: 12px;
+  height: 12px; 
   margin-right: 10px;
+  color: #757575;
+}
+.contact-link:hover,
+.contact-link:focus {
+  color: #2196f3;
+
 }
 .contact-icon {
   width: 16px;
-  height: 12px;
+  height: 16px;
   margin-right: 10px;
-  /* box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.24); */
 }
 .smartphone,
-.envelope {
-  fill: #757575;
-}
+.envelope,
 .envelope-portfolio {
   fill: #757575;
 }
-.smartphone {
-  width: 10px;
-  height: 16px;
-}
-.header-mail {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #757575;
-}
-.header-tel {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #757575;
-}
+
 .header-list .link.current {
   color:  #2196f3;
 }
@@ -155,16 +142,7 @@ img {
 .header-list .link:focus {
   color: #2196f3;
 }
-.header-tel:hover,
-.header-tel:focus {
-  color: #2196f3;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.header-mail:hover,
-.header-mail:focus {
-  color: #2196f3;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+
 .smartphone:hover,
 .smartphone:focus {
   fill: #2196f3; 
@@ -172,8 +150,8 @@ img {
 .envelope:hover,
 .envelope:focus {
   fill: #2196f3;
-  box-shadow: 0px 4px 3px 0px rgba(0,0,0,0.24);
 }
+
 .link {
   font-weight: 500;
   font-size: 14px;
@@ -181,13 +159,18 @@ img {
   letter-spacing: 0.02em;
   color: #212121;
 }
+.contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em; 
+}
 /* Webstudio logo */
 .header-logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  /* identical to box height */
   letter-spacing: 0.03em;
   color: #212121;
 }
