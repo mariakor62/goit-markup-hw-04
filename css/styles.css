@@ -116,13 +116,17 @@ img {
   display: flex;
   justify-content: center;
   height: 12px; 
-  /* margin-right: 10px; */
   color: #757575;
 }
 .contact-link:hover,
 .contact-link:focus {
+  cursor: pointer;
   color: #2196f3;
-
+}
+.contact-link:hover .contact-icon,
+.contact-link:focus .contact-icon {
+  cursor: pointer;
+  fill: #2196f3;
 }
 .contact-icon {
   width: 16px;
@@ -444,9 +448,18 @@ img {
 /* Footer Contacts */
 .footer {
   display: flex;
-  align-items: center;
   padding: 60px 0 60px;
   background-color: #2f303a;
+}
+.footer-contacts {
+  display: flex;
+  align-items: baseline;
+}
+.contacts-address {
+  margin-top: 20px;
+}
+.footer-item {
+  margin-bottom: 9px;
 }
 .contact-items {
   display: block;
@@ -456,19 +469,16 @@ img {
 .logo-footer {
   margin-bottom: 20px;
 }
-.footer-contacts {
-  display: flex;
-}
+
 .list-icons {
   display: flex;
   justify-content: center;
 }
-.contacts-address {
+
+.text-item {
   margin-bottom: 9px;
 }
-.footer-item {
-  margin-bottom: 9px;
-}
+
 .contacts-address {
   font-style: normal;
   font-weight: 400;
@@ -546,7 +556,6 @@ img {
   vertical-align: top;
   letter-spacing: 3%;
   color: #FFFFFF;
-  margin-top: 12px;
   margin-bottom: 20px;
 }
 
@@ -623,8 +632,8 @@ img {
   margin-right: 30px;
   margin-top: 30px;
 }
-.card:hover,
-.card:focus {
+.items:hover,
+.items:focus {
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
