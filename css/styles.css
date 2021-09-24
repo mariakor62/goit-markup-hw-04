@@ -114,7 +114,7 @@ img {
 
 .contact-link {
   display: flex;
-  justify-content: center;
+  align-items: center;
   height: 12px; 
   color: #757575;
 }
@@ -461,11 +461,6 @@ img {
 .footer-item {
   margin-bottom: 9px;
 }
-.contact-items {
-  display: block;
-  justify-content: center;
-  align-items: center;
-}
 .logo-footer {
   margin-bottom: 20px;
 }
@@ -549,12 +544,12 @@ img {
 }
 .text-title {
   font-family: 'Roboto';
-  font-weight: normal;
+  font-weight: bold;
   font-size: 14px;
   line-height: 16px;
   text-align: left;
   vertical-align: top;
-  letter-spacing: 3%;
+  letter-spacing: 0.1em;
   color: #FFFFFF;
   margin-bottom: 20px;
 }
